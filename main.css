@@ -1,0 +1,13 @@
+h1{
+    color: purple;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 68px;
+    text-align: center;
+    text-shadow: rgb(33,133,33);
+    font-family: 'Monospace';
+}
+
+body{
+    background-color: #111;
+}
