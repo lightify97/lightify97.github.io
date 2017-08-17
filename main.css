@@ -7,11 +7,13 @@ body{
 }
 
 h1{
-    color: purple;
+    color: #FAFAFA;
+    font-family: 'Droid Serif', 'serif';
     font-style: normal;
     font-weight: lighter;
-    font-size: 68px;
+    font-size: 88px;
+    margin-top: 40%;
     text-align: center;
     text-shadow: rgb(33,133,33);
-    font-family: 'Droid Serif', 'serif';
+   
 }
