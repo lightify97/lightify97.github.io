@@ -1,3 +1,11 @@
+ @import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+body{
+   background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 h1{
     color: purple;
     font-style: normal;
@@ -5,9 +13,5 @@ h1{
     font-size: 68px;
     text-align: center;
     text-shadow: rgb(33,133,33);
-    font-family: 'Monospace';
-}
-
-body{
-    background-color: #111;
+    font-family: 'Droid Serif', 'serif';
 }
