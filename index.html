@@ -1,11 +1,35 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Hello</title>
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-        <h1>Hello World</h1>
-    </body>
+<!DOCYTPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="styles/main.css" media="screen">
+    <link rel="stylesheet" href="styles/form.css" media="screen">
+  </head>
+  <body>
+  <main>
+    <form>
+      <label class='frmLabel'>Name</label>
+      <input class='frmInput'  type='text' name='firstname' placeholder='John Doe'><br>
+      <label class='frmLabel'>Email</label>
+      <input class='frmInput'  type='email' name='mail' placeholder='you@example.com'><br>
+      <label class='frmLabel'>Gender</label>
+        <select name='gender' class='frmInput' id="selBox">
+          <option value='' selected></option>
+          <option value='Male'>Male</option>
+          <option value='Female'>Female</option><br>
+          </select><br> 
+        <input class='frmInput' type='submit' name='submit' value="Sign Up"><br><br>
+    </form>
+    </main>
+    <footer>Hosted with <span id='heart'>&hearts;</span> By Github. &copy; <span id='date'></span></footer>
+    <script>
+      function updateDate(){
+        var date = new Date();
+        document.getElementById('date').innerHTML = date.getFullYear();
+      }
+      //setInterval(updateDate, 1000);
+      updateDate();
+    </script>
+  </body>
 </html>

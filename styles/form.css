@@ -1,0 +1,53 @@
+body{
+  background: #14191f url("../images/background.jpg"); 
+  background-repeat: repeat-x;
+  background-size: contain;
+  #overflow: hidden;
+}
+form {
+    margin: 5% 0% 0% 33%;
+    font-size: 2.0em;
+    padding: 1% 1%;
+}
+input, #selBox {
+  color: #ffffff;
+  font-style: italic;
+  background: #14191f !important;
+  font-size: 20px;
+  padding: 1% 1%;
+  width: 50%;
+  border: 1px groove dodgerBlue;
+}
+
+.frmLabel {
+    font-family: 'lobster two';
+    line-height: 40px;
+    background-color: #23a2fa;
+    padding: 1% 1%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.frmInput {
+    display: flex;
+    align-self: center;
+    text-align: center;
+}
+
+input[type='submit']{
+    display: inline;
+    opacity: 0.6;
+    margin-top: 7%;
+}
+
+input[type='submit']:hover, input[type='submit']:focus{
+    opacity: 1.0;
+}
+footer{
+    text-align: center;
+    color: #23a2fa;
+}
+#heart {
+  color: #DD3430;
+  font-size: 1.4em;
+}
