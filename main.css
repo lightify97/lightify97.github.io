@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+ @import url('https://fonts.googleapis.com/css?family=Pacifico');
 body{
    background: #833ab4;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
@@ -8,7 +8,7 @@ body{
 
 h1{
     color: #FAFAFA;
-    font-family: 'Droid Serif', 'serif';
+    font-family: 'Pacifico', 'serif';
     font-style: normal;
     font-weight: lighter;
     font-size: 100px;
