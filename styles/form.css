@@ -1,53 +1,121 @@
+* {
+  box-sizing: border-box;
+}
 body{
-  background: #14191f url("../images/background.jpg"); 
-  background-repeat: repeat-x;
-  background-size: contain;
-  #overflow: hidden;
+  background: #14191f url('../images/background.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: #23a2af;
+}
+.infobar {
+  width: 100vw;
+  height: 2vw;
+  background-color: black;
+  color: #23a2fa;
+  text-align: center;
+  position: absolute;
+}
+header h1 {
+  font-size: 1.5em;
+  font-weight: lighter;
+  margin: 15% 0% 0% 20%;
+  color: #eee;
+}
+
+#banner {
+  float: right;
+  font-size: 4em;
+  color: #23a3fa;
+  margin: 8% 40% 0 0;
+}
+.description p{
+  display: inline-block;
+  float: right;
+  font-size: 23px;
+  word-wrap: break-word;
+  width: 35vw;
+  margin: 5% 15% 0% 0%;
+  padding: 0%;
+  padding-left: 4%;
 }
 form {
-    margin: 5% 0% 0% 33%;
-    font-size: 2.0em;
-    padding: 1% 1%;
+    display: block;
+    font-family: 'lobster two';
+    padding-right: 0px;
+    margin: 10% 0% 0% 5%;
+    width: 100%;
 }
-input, #selBox {
-  color: #ffffff;
-  font-style: italic;
+.frmInput, #selBox {
+  display: inline-block;
+  color:#eee;
   background: #14191f !important;
   font-size: 20px;
   padding: 1% 1%;
-  width: 50%;
-  border: 1px groove dodgerBlue;
+  width: 30vw;
+  margin: 0% 0% 0% 4px;
+  text-align: center;
+  height: 3vw;
 }
-
-.frmLabel {
-    font-family: 'lobster two';
+#selBox::after {
+  text-align: center;
+}
+.frmLabel { 
+    display: inline-block;
+    font-family: 'Lobster two';
     line-height: 40px;
-    background-color: #23a2fa;
-    padding: 1% 1%;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.frmInput {
-    display: flex;
-    align-self: center;
+    background-color: #14191f;
+    color: #23a2fa;
+    padding: 0.5% 0.5%;
+    font-size: 20px;
+    font-weight: Lighter;
+    width: 6vw;
     text-align: center;
 }
 
 input[type='submit']{
+    font-family: 'lobster two';
     display: inline;
     opacity: 0.6;
-    margin-top: 7%;
+    color: #23a2fa;
+    margin: 15% 0 0 0%;
+    width: 37vw;
 }
 
 input[type='submit']:hover, input[type='submit']:focus{
     opacity: 1.0;
 }
 footer{
+    display: inline-block;
     text-align: center;
-    color: #23a2fa;
+    color: #ddd;
+    margin: 8% 8% 0 -15%;
 }
 #heart {
   color: #DD3430;
   font-size: 1.4em;
+}
+#date {
+  color: #23a2fa;
+}
+.signup {
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.info {
+  width: 50%;
+  float: left;
+  position: relative;
+}
+strong {
+  color: #23a2fa;
+}
+#placeholder {
+  text-align: center;
+  font-family: monospace;
+  font-style: oblique;
 }

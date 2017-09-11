@@ -2,34 +2,66 @@
 <html lang='en'>
   <head>
     <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta http-equiv='X-UA-Compatibe' content='IE=edge, chrome=1' >
     <title>HTML Forms</title>
-    <link rel="stylesheet" href="styles/main.css" media="screen">
-    <link rel="stylesheet" href="styles/form.css" media="screen">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lobster+Two' >
+    <link rel='stylesheet' href='styles/main.css' media='screen'>
+    <link rel='stylesheet' href='styles/form.css' media='screen'>
   </head>
   <body>
+  <div class="infobar">
+    <p>Feel free to use or modify this page. It would make for a good landing page. If you can improve the page please submit a PR</p>
+  </div>
+  <div class="info">
   <main>
-    <form>
-      <label class='frmLabel'>Name</label>
-      <input class='frmInput'  type='text' name='firstname' placeholder='John Doe'><br>
-      <label class='frmLabel'>Email</label>
-      <input class='frmInput'  type='email' name='mail' placeholder='you@example.com'><br>
-      <label class='frmLabel'>Gender</label>
-        <select name='gender' class='frmInput' id="selBox">
-          <option value='' selected></option>
-          <option value='Male'>Male</option>
-          <option value='Female'>Female</option><br>
-          </select><br> 
-        <input class='frmInput' type='submit' name='submit' value="Sign Up"><br><br>
-    </form>
-    </main>
+    <header>
+      <h1 id='banner' title="The Light Company">Lightify</h1>
+    </header>
+    <section class="description">
+      <p>
+        <em id="placeholder">[Description goes here]</em><br>
+        Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      </p>
+    </section>
+  </main>
+  </div>
+  <div class='signup'>
+    <header>
+      <h1>Join Us &amp; Help Build a <strong>Community</strong></h1>
+    </header>
+    <aside>
+    <form autocomplete='off'> 
+        <label class='frmLabel'>Name&nbsp;</label>
+        <input class='frmInput'  type='text' name='firstname' placeholder='John Doe'><br>
+        <label class='frmLabel'>Email&nbsp;</label>
+        <input class='frmInput'  type='email' name='mail' placeholder='johnd@example.com'><br>
+        <label class='frmLabel'>Gender</label>
+          <select name='gender' class='frmInput' id='selBox'>
+            <option value='' selected></option>
+            <option value='Male'>Male</option>
+            <option value='Female'>Female</option>
+            </select><br>
+          <input class='frmInput' type='submit' name='submit' value='Sign Up'><br><br>
+      </form>
+      </aside>
+    </div>
     <footer>Hosted with <span id='heart'>&hearts;</span> By Github. &copy; <span id='date'></span></footer>
     <script>
       function updateDate(){
         var date = new Date();
-        document.getElementById('date').innerHTML = date.getFullYear();
+        document.getElementById('date').innerHTML = date.toGMTString();
       }
-      //setInterval(updateDate, 1000);
-      updateDate();
+      setInterval(updateDate, 1000);
     </script>
   </body>
 </html>

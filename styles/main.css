@@ -1,6 +1,6 @@
 body, h1, h2, h3, h4, h5, h6, p, ul, dl, ol, form, fieldset, input, label, table, tbody, thead, tfoot, th, td, tr, textarea, select 
 {
-    font-family: 'Operator Mono Medium','lobster two','helvetica neue', helvetica, 'lucinda sans unicode', 'sans-serif';
+    font-family:'lobster two','helvetica neue', helvetica, 'lucinda sans unicode', 'sans-serif';
     font-weight: normal;
     color: #fff;
     padding: 0;
