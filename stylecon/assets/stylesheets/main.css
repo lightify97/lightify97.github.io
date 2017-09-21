@@ -1,0 +1,10 @@
+@charset 'utf-8';
+
+.social {
+    background-color: orange;
+    color: #333;
+    display: flex;
+    margin-top: 45.6vw;
+    padding: 2%;
+    overflow: hidden;
+}
