@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Positioning</title>
+  <style type="text/css">
+  * {
+    border: 1px dotted dodgerblue;
+    box-sizing: border-box;
+    margin: 0;
+  }
+    div {
+      height: 100px;
+      width: 100px;
+    }
+    .offset {
+      left: 20px;
+      position: absolute;
+      top: 20px;
+    }
+    section {
+      display: relative;
+    }
+  </style>
+</head>
+<body>
+<div>Div</div>
+<section>
+  <div class="offset">Div.offset</div>
+</section>
+<div>Div</div>
+</body>
+</html>
