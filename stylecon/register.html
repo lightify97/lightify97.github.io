@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Styles Conference</title>
-    <!-- <link rel="stylesheet" href="assets/stylesheets/bootstrap-reboot.css" > -->
-    <link rel="stylesheet" href="assets/stylesheets/main.css" >
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+    <link rel="stylesheet" href="assets/stylesheets/main.min.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:100,300,400,500,600">
   </head>
   <body>
     <header class="primary-header container group">
@@ -16,11 +15,13 @@
       </h1>
       <h3 class="tagline">August 14&ndash;18th &mdash; Chicago, IL</h3>
       <nav class="nav primary-nav">
-        <a href="index.html">Home</a>
-        <a href="speakers.html">Speakers</a>
-        <a href="schedule.html">Schedule</a>
-        <a href="venue.html">Venue</a>
-        <a href="register.html">Register</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="speakers.html">Speakers</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="venue.html">Venue</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
       </nav>
     </header>
     <section class="row-alt">
@@ -28,14 +29,62 @@
         <h1>Register</h1>
         <p>Every year we aim to have an unbelievable time, and this year we’d love it for you to join us. Conference passes only cost $99, one of the best values you’ll find.</p>
       </div>
-    </section>    <footer class="primary-footer container group">
-      <small>&copy; Styles Conference</small>
+    </section>
+    <section class="row">
+      <div class="grid">
+        <section class="form-description col-2-3">
+          <h2>Purchase a Conference Pass</h2>
+          <p>$99 PER PASS</p>
+          <p>Purchase your Styles Conference pass using the form to the right. Multiple passes may be purchased within the same order, so feel free to bring a friend or two along. Once your order is finished we’ll follow up and provide a receipt for your purchase. See you soon!</p>
+          <h3>Why Attend?</h3>
+          <ul class="features">
+            <li>Over twenty world-class speakers</li>
+            <li>One full day of workshops and two full days of presentations</li>
+            <li>Hosted at The Chicago Theatre, a historical landmark</li>
+            <li>August in Chicago is simple amazing</li>
+          </ul>
+        </section><!--
+        --><section class="col-1-3">
+          <form action="register.html#" method="POST">
+            <fieldset class="register-form">
+              <label>
+                Name
+                <input class="input-box" type="text" name="name" placeholder="Full Name" required autofocus>
+              </label>
+              <label>
+                Email
+                <input class="input-box" type="email" name="email" placeholder="Email Address" required>
+              </label>
+              <label>
+                Number of Passes<br>
+                <select name="quantity" required>
+                  <option value="1" selected>1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </label>
+              <label>
+                Comments
+                <textarea name="comment"></textarea>
+              </label>
+            </fieldset>
+            <input class="btn btn-default" type="submit" name="submit" value="Purchase">
+          </form>
+        </section>
+      </div>
+    </section>
+    <footer class="primary-footer container group">
+      <small>Hosted with <span id="heart">&hearts;</span> by <span id="github"><a href="github.com">Github</a></span> &copy; Styles Conference</small>
       <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="speakers.html">Speakers</a>
-        <a href="schedule.html">Schedule</a>
-        <a href="venue.html">Venue</a>
-        <a href="register.html">Register</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="speakers.html">Speakers</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="venue.html">Venue</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
       </nav>
     </footer>
   </body>

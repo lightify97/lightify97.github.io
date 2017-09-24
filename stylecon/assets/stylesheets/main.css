@@ -58,7 +58,7 @@
  *====================================
  */
 body {
-    background: #293f50;
+    background: #112738;
     color: #888;
     font: 300 16px/22px "Fira Sans", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -83,7 +83,7 @@ body {
     padding-right: 30px;
 }
 .col-1-3 {
-    width: 30%;
+    width: 33.33%;
 }
 .col-2-3 {
     width: 66.66%;
@@ -91,11 +91,6 @@ body {
 .col-1-3, .col-2-3 {
     display: inline-block;
     vertical-align: top;
-    margin: 7px;
-}
-.grid, .col-1-3, .col-2-3 {
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 /*
@@ -123,7 +118,7 @@ body {
      min-width: 960px;
  }
 .row {
-    background: #fff;
+    background: #ffffff;
     min-width: 960px;
     padding: 66px 0 44px 0;
 }
@@ -161,12 +156,6 @@ h3 {
 h4 {
     font-size: 18px;
 }
-h5 {
-    color: #a9b2b9;
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
 strong {
     font-weight: 400;
 }
@@ -202,7 +191,7 @@ a {
     color: #a9b2b9;
 }
 p a {
-    border-bottom: 9px solid #dfe2e5;
+    border-bottom: 3px solid #aed8b5;
 }
 .primary-header a, .primary-footer a {
     color: #fff;
@@ -236,6 +225,17 @@ p a {
     color: #648880;
 }
 
+.btn-default {
+    background: #648880;
+    font: 400 15px/15px "Fira Sans";
+    padding: 4% 8%;
+    height: 3.5em;
+    border: none;
+    text-align: center;
+}
+.btn-default:hover {
+    background: #4B736A;
+}
 /*
  *=========================================
  *             Home
@@ -255,17 +255,35 @@ p a {
     font-size: 24px;
 }
 .teaser {
-    box-shadow: 2px 2px 35px rgba(54,88, 80,.4);
+    box-shadow: 2px 2px 20px rgba(64,88, 80,.9);
     border-radius: 6px;
-    height: 60vh;
+    height: 26rem;
     vertical-align: top;
+    margin-left: 3%;
+    width: 30%;
 }
 .teaser img {
     display: block;
     max-width: 100%;
-    border-radius: 5px;
-    margin-bottom: 22px;
-    padding: 0;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    margin-bottom: 8%;
+    margin-top: -46%;
+    height:60%;
+}
+.teaser h3, .teaser p {
+    text-align: center;
+    padding:0 4%;
+}
+.teaser h5 {
+    color: #293f50;
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: 300;
+    text-align: left;
+    margin-top: -10%;
+    padding-bottom: 40%;
+    text-transform: uppercase;
 }
 /*
  *=========================================
@@ -282,7 +300,6 @@ p a {
     letter-spacing: .5px;
     text-transform: uppercase;
 }
-
 /*
  *=========================================
  *             Navigation
@@ -295,6 +312,7 @@ p a {
     display: inline-block;
     vertical-align: top;
     margin: 0 10px;
+    font-weight: 400;
 }
 .nav li:last-child {
     margin-right: 0px;
@@ -314,7 +332,7 @@ p a {
     letter-spacing: .5px;
     padding: 40px 0 22px 0;
     font-weight: 300;
-    text-shadow: 2px 4px 1px rgba(64, 88,80 ,.4);
+    text-shadow: 2px 4px 1px rgba(0, 0, 0,.5);
     text-transform: uppercase;
 }
 
@@ -333,6 +351,15 @@ p a {
     float: left;
     font-weight: 400;
 }
+
+footer #github {
+    font-size: 25px;
+}
+footer #heart {
+    color:#F73A3A;
+    font-size:30px;
+}
+
 /*
  *=========================================
  *             Speakers List
@@ -340,14 +367,148 @@ p a {
  */
 
 .speaker-info {
-    border: 1px solid gray;
+    border: 1px solid #dfe2e5;
     border-radius: 5px;
     margin-top: 88px;
-    padding: 22px 0;
+    margin-left: 10%;
+    padding-bottom: 22px;
     text-align: center;
+}
+.speaker-info img{
+    display: inline-block;
+    height: 130px;
+    border-radius: 50%;
+    vertical-align: top;
+    margin-top: -70px;
+    margin-bottom: 20px;
 }
 .speaker {
     margin-bottom: 44px;
 }
+/*
+ *=========================================
+ *             Venue
+ *=========================================
+ */
+.venue-theatre, .venue-hotel, .venue-map {
+    height: 50vh;
+}
+.venue-theatre{
+    margin-bottom: 66px;
+}
+.venue-hotel {
+    margin-bottom: 22px;
+}
+.venue-map {
+    float: right;
+    box-shadow: 1px 1px 20px black;
+    border-radius: 5px;
+}
+/*
+ *=========================================
+ *             Register
+ *=========================================
+ */
+.features {
+    list-style-type: square;
+    padding-left: 30px;
+}
+.form-description {
+    text-align: justify;
+    padding-right: 6%;
+}
+.register-form label {
+    display: block;
+    color: #648880;
+    margin-bottom: 10px;
+    font-weight: 400;
+    margin-top: -5%;
+    padding-top:40px;
+}
+.register-form textarea {
+    height: 120px;
+}
+.register-form select {
+    border-radius: 3px;
+    color: #888;
+    font-weight: bold;
+    font-size: 16px;
+    width: 60px;
+    height: 39px;
+    padding-left: 4%;
+}
+.register-form textarea, .input-box {
+    border: 1px solid lightgray;
+    display: block;
+    font: 400 normal 15px/12px "Fira Sans";
+    width: 90%;
+    border-radius: 5px;
+    padding: 3%;
+    margin-top: 10px;
+}
+.input-box {
+    height: 3em;
+}
 
+/*
+ *=========================================
+ *             Schedule
+ *=========================================
+ */
+table {
+    margin-bottom: 44px;
+    width: 100%;
+}
+table a {
+    color: #888;
+}
+table h4 {
+    margin-bottom: 0;
+}
+table:last-child {
+    margin-bottom: 0;
+}
+th, td {
+    padding-bottom: 22px;
+    vertical-align: top;
+}
+th{
+    padding-right: 45px;
+    text-align: right;
+    width: 20%;
+}
+td {
+    width: 40%;
+}
+thead {
+    line-height: 44px;
+}
+thead th, thead td{
+    color: #648880;
+    font-size: 25px;
+}
+tbody th {
+    color: #a9b2b9;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 22px;
+    text-transform: uppercase;
+}
+tbody td {
+    border-top: 1px solid #dfe2e5;
+    padding-top: 22px;
+}
 
+tbody td:first-of-type {
+    padding-right: 15px;
+}
+tbody td:last-of-type {
+    padding-left: 15px;
+}
+tbody td:only-of-type {
+    padding-left: 0;
+    padding-right: 0;
+}
+.schedule-offset {
+    color: #a9b2b9;
+}
