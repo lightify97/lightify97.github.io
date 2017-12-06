@@ -4,7 +4,7 @@
   "description": "Landing page for a Travel Website.",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass -w sass/main.scss css/style.css",
+    "compile:sass": "node-sass --watch --recursive --output css --source-map true --source-map-contents sass",
     "dev": "concurrently 'npm run compile:sass' 'live-server -q'"
   },
   "author": "",

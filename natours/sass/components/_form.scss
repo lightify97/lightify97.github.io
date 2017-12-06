@@ -1,0 +1,101 @@
+ .form {
+
+    font-family: inherit;
+    font-size: inherit;
+
+    &__input{
+        font-size:1.5rem;
+        padding: 1.5rem 2rem;
+        color: inherit;
+        border-radius: 2px;
+        background-color: rgba($color-white, .8);
+        border: none;
+        width: 75%;
+        border-bottom: 4px solid transparent;        
+
+        &:focus {
+            outline: none;
+            color: $color-dark-grey;
+            font-weight: 300;
+        }
+        
+        &:focus:invalid {
+            border-bottom: 4px solid $color-secondary-dark;            
+        }
+        
+        &:focus:valid {
+            border-bottom: 4px solid $color-primary;
+        }
+
+        &::-webkit-input-placeholder{
+            font-family: inherit;
+        }
+    }
+
+    &__input:focus + &__label {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+
+    &__input:focus::-webkit-input-placeholder{
+        transform: translateY(3rem);
+    }
+    
+    &__label {
+        display: block;
+        margin: .7rem 0 3rem 2rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+        opacity: 0;
+        transform: translateY(-2.5rem);
+        transition: all .4s;
+    }
+
+    &__radio {
+        &-group {
+            position: relative;
+            display: inline-block; 
+            margin-right: 4rem;
+        }
+
+        &-input {
+            visibility: hidden;
+        }
+
+        &-input:checked ~ &-button::after {
+            visibility: visible;
+        }
+
+        &-label {
+            font-size: 1.6rem;
+            padding-left: 2rem;
+            cursor: pointer;
+        }
+
+        &-button {
+            height: 3rem;
+            width: 3rem;
+            border-radius: 50%;
+            border: 5px solid $color-primary;
+            display: inline-block;
+            position: absolute;
+            top: -.2rem;
+            left: 0;
+
+            &::after {
+                content: "";
+                height: 1.3rem;
+                width: 1.3rem;
+                border-radius: 50%;
+                background: $color-primary;
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                visibility: hidden;
+            }
+        }
+    }
+    
+}

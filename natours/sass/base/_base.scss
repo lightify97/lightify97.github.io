@@ -1,0 +1,17 @@
+*,
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%; // This sets the rem to 16px (browser default)
+}
+
+body {
+    box-sizing: border-box;
+    color: $color-dark-grey;
+}

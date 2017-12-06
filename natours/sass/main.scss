@@ -1,196 +1,24 @@
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-*,
-*::before, 
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-html {
-    font-size: 62.5%;
-}
+@import "components/button";
+@import "components/bg-video";
+@import "components/card";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/form";
+@import "components/popup";
+@import "components/story";
 
-body {
-    //font-family: "Lato", sans-serif;
-    /* font-size: 16px; */
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.7;
-    box-sizing: border-box;
-}
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
 
-.header {
-    height: 100vh;
-    background-image: linear-gradient(to right bottom,
-    rgba($color-primary-light, .7) , 
-    rgba($color-primary-dark, 0.7)
-    ), 
-    url(../img/hero.jpg);
-    background-size: cover;
-    background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
-    position: relative;
-}
-
-.header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-}
-
-.header__logo {
-    height: 3.5rem;
-}
-
-.header__text-box {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.heading-primary {
-    text-transform: uppercase;
-    color: #fff;
-    text-shadow: 3px 3px 20px #222;
-    backface-visibility: hidden;
-    margin-bottom: 6rem;
-}
-
-.heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 1.3rem;
-    //animation: moveInTop;
-    /* animation-duration: 3s;
-    animation-timing-function: ease-out; */
-}
-
-.heading-primary--byline {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.4rem;
-    margin-left: 1.5rem;
-    animation: moveInLeft 3s ease-out;
-}
-
-.heading-primary--main > .c1, .c2, .c3, .c4, .c5, .c6, .c7
-{
-    display: inline-block;
-    animation: fall 3s ease-in-out;
-}
-
-@keyframes fall {
-    0% {
-        opacity: 0;
-        transform: translateY(-30rem);
-    }
-    50% {
-        transform: rotate(180deg);
-        opacity: .5;
-    }
-    100% {
-        transform: rotate(0deg);
-        opacity: 1;
-    }
-}
-
-@keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100rem);
-    }
-    80% {
-        transform: translateX(2rem);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-@keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100rem);
-    }
-    80% {
-        transform: translateX(-2rem);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-@keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(3rem);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-.btn:link,
-.btn:visited {
-    display: inline-block;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    border-radius: 10rem;
-    transition: all .2s;
-    position: relative;
-}
-
-.btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
-}
-
-.btn:active {
-    box-shadow: 0 .5px 1rem rgba(0, 0, 0, .3);
-    transform: translateY(-.2rem);
-}
-
-.btn--white {
-    background-color: #fff;
-    color: #333;
-}
-
-.btn::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
-}
-
-.btn--white::after {
-    background-color: #fff;
-}
-
-.btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-
-}
-
-.btn--animated {
-    animation: moveInBottom .5s ease-out;
-    animation-delay: 3s;
-    animation-fill-mode: backwards;
-}
+@import "pages/home";
