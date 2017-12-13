@@ -9,7 +9,11 @@
     opacity: 0;
     visibility: hidden;
     transition: all .5s;
-    
+
+    @include respond(phone){
+        overflow: scroll;
+    }
+
     &__content {
         @include center;
         background: $color-white;
@@ -20,6 +24,17 @@
         overflow: hidden;
         transform: translate(-50%, -50%) scale(.5);
         transition: all .4s .2s;
+
+        @include respond(tab-port){
+            width: 90%;
+            overflow: scroll;
+        }
+
+        @include respond(phone){
+            width: 100%;
+            background: rgba($color-white, .9);
+            overflow: scroll;
+        }
     }
 
     &__left {
@@ -28,18 +43,36 @@
         height: 100%;
         padding: -2% 0;
         padding-bottom: -25%;
+
+        @include respond(phone){
+            display: none;
+        }
     }
 
     &__right {
         width: 66.6666667%;
         display: table-cell;
-        vertical-align: middle;        
+        vertical-align: middle;
         padding: 3rem 5rem;
+
+        @include respond(tab-port){
+            width: 100%;
+            padding: 1rem 3rem;
+        }
+
+        @include respond(phone){
+            width: 100%;
+            padding: 1rem 3rem;
+        }
     }
 
     &__img {
         display: block;
         width: 100%;
+
+        @include respond(phone){
+            display: none;
+        }
     }
 
     &__text {
@@ -49,6 +82,14 @@
         column-rule: 1px solid $color-light-grey;
         hyphens: auto;
         -webkit-hyphens: auto;
+
+        @include respond(phone){
+            column-count: 1;
+        }
+
+        @include respond(phone-small){
+            font-size: 1.3rem;
+        }
 
     }
 
@@ -66,6 +107,10 @@
         font-size: 3rem;
         text-decoration: none;
         color: $color-dark-grey;
+
+        @include respond(phone){
+            font-size: 2rem;
+        }
         &:hover {
             color: $color-primary;
         }

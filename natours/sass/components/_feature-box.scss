@@ -5,7 +5,18 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .3);
     transition: all .3s;
+
+    @include respond(tab-port){
+        padding: 2rem 1.5rem;
+    }
     
+    @include respond(phone){
+        padding: 1.5rem 1.5rem;
+    }
+
+    // @include respond(tab-port){
+    //     padding: 1rem .5rem;
+    // }
 
     &__icon {
         font-size: 6rem;
@@ -15,6 +26,10 @@
         color: transparent;
         margin-bottom: .5rem;
         padding: .7rem;
+
+        @include respond(tab-port){
+            margin-bottom: 0;
+        }
     }
 
     &:hover {

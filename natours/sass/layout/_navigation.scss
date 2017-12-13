@@ -9,13 +9,25 @@
         height: 7rem;
         width: 7rem;
         border-radius: 50%;
-        position: fixed;
         top: 6rem;
         right: 6rem;    
+        position: fixed;
         z-index: 200;
         box-shadow: 0 1rem 3rem rgba($color-black, .3);
         text-align: center;
         cursor: pointer;
+
+        @include respond(tab-port) {
+            top: 4rem;
+            right: 4rem;
+        }
+
+        @include respond(phone){
+            width: 5rem;
+            height: 5rem;
+            top: 3rem;
+            right: 3rem; 
+        }
     }
     
     &__background {
@@ -28,6 +40,20 @@
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 100;
         transition: transform .8s cubic-bezier(.02,.19,.04,.87);
+
+
+        @include respond(tab-port) {
+            top: 4.5rem;
+            right: 4.5rem;
+        }
+
+
+        @include respond(phone){
+            width: 4rem;
+            height: 4rem;
+            top: 3.5rem;
+            right: 3.5rem;
+        }
     }
 
     &__nav {
@@ -100,6 +126,10 @@
         position: relative;
         margin-top: 3.5rem;
 
+        @include respond(phone){
+            margin-top: 2.5rem;
+        }
+
         &,
         &::before,
         &::after {
@@ -107,6 +137,10 @@
             height: 2px;
             background-color: $color-darker-grey;
             display: inline-block;
+            
+            @include respond(phone){
+                width: 2.5rem;
+            }
         }
         
         &::before,
@@ -119,10 +153,19 @@
 
         &::before {
             top: -.8rem;
+    
+            @include respond(phone){
+                top: -.7rem;
+            }
         }
 
         &::after {
             bottom: -.8rem; 
+
+            @include respond(phone){
+                bottom: -.7rem;
+            }
+            
         }
         
     }

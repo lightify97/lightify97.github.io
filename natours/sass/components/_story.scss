@@ -1,15 +1,31 @@
 .story {
-    width: 75%;
-    margin: 0 auto;
-    box-shadow: 0 3rem 6rem rgba($color-black , .1);
-    background-color: rgba($color-white, .6);
-    border-radius: $border-radius;
-    padding: 6rem;
-    font-size: $default-font-size;
-    transform: skew(-12deg);
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($color-black , .1);
+  background-color: rgba($color-white, .6);
+  border-radius: $border-radius;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: $default-font-size;
+  transform: skew(-12deg);
+  
+  @include respond(tab-port){
+    width: 100%;
+    padding: 5rem;
+    padding-left: 7rem;
+    transform: skew(0);
+  }
+  
+  @include respond(phone) {
+    transform: skew(0);  
+  }
 
     & > * {
       transform: skew(12deg);
+
+      @include respond(tab-port){
+        transform: skew(0);
+      }
     }
     &__shape {
       width: 15rem;
@@ -20,7 +36,17 @@
       position: relative;
       margin-right: 4 rem;
       clip-path: circle(50% at 50% 50%);
-      transform: translateX(-2.5rem) skew(12deg);
+      transform: translateX(-3rem) skew(12deg);
+
+      @include respond(tab-port){
+        transform: translateX(-3rem) skew(0);
+        margin-right: 0;
+      }
+
+      @include respond(phone-small){
+        width: 12rem;
+        height: 12rem;  
+      }
     }
 
     &__img {
@@ -30,7 +56,7 @@
       transition: all .4s;
     }
 
-    &__text {
+    &__text {   
     }
 
     &__caption {
@@ -56,4 +82,5 @@
       transform: translateX(-4rem) scale(1);
       filter: blur(3px) brightness(80%);
     }
+
 }

@@ -3,6 +3,7 @@ body {
     font-size: $default-font-size;
     font-weight: 400;
     line-height: 1.7;
+    overflow-x: auto;
 }
 
 .heading-primary {
@@ -13,26 +14,53 @@ body {
     margin-bottom: 6rem;
 
     &--main {
-        display: block;
-        font-size: 6rem;
-        font-weight: 400;
-        letter-spacing: 1.3rem;
+        display: inline-block;
+        font-size: 5rem;
+        letter-spacing: 4rem;
+        font-weight: 600;
+        margin-left: 3rem;
+        text-shadow: 0 1rem 3rem rgba($color-black, .5);
+        animation: moveInRight 3s ease-out;
+
+        @include respond(big-desktop){
+            font-size: 8rem;
+        }
+
+        @include respond(phone){
+            font-size: 3.5rem;
+        }
+        
+        @include respond(phone-small){
+            font-size: 3rem;
+            letter-spacing: 2rem;
+            font-weight: 900;
+        }
     }
-    
     &--byline {
         display: block;
         font-size: 2rem;
         font-weight: 700;
-        letter-spacing: 1.4rem;
+        letter-spacing: 1.1rem;
         margin-left: 1.5rem;
         animation: moveInLeft 3s ease-out;
-    }
+        
+        
+        @include respond(big-desktop){
+            font-size: 6.5rem;
+        }
 
-    &--main > .c1, .c2, .c3, .c4, .c5, .c6, .c7
-    {
-        display: inline-block;
-        animation: fall 3s ease-in-out;
+        @include respond(phone){
+            font-size: 1.8rem;
+            letter-spacing: .8rem;
+        }
+        
+        @include respond(phone-small){
+            font-size: 1.5rem;
+            font-weight: 900;
+            letter-spacing: .4rem;
+        }
     }
+    
 }
 
 .heading-secondary {
@@ -52,12 +80,29 @@ body {
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
     }
 
+    @include respond(tab-port) {
+        font-size: 3rem;
+        width: 100%;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
+
+    @include respond(phone-small){
+        font-size: 2rem;
+    }
+
 }
 
 .heading-tertiary {
     font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
+
+    @include respond(tab-port){
+        font-size: 1.7rem;
+    }
 }
 
 .paragraph {
