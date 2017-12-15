@@ -120,6 +120,17 @@
     &__checkbox:checked ~ &__nav {
         opacity: 1;
         width: 100%;
+        visibility: visible;
+    }
+
+    &__checkbox ~ &__background {
+        transform: scale(1);
+    }
+
+    &__checkbox ~ &__nav {
+        opacity: 0;
+        width: 0;
+        visibility: hidden;
     }
 
     &__icon {
@@ -194,13 +205,4 @@
         transform: rotate(-135deg);
         bottom: 0;
     }
-
-    .inactive &__background {
-        transform: scale(1);
-    }
-    .inactive &__nav {
-        opacity: 0;
-        width: 0;
-    }
-     
 }

@@ -600,7 +600,8 @@ body {
     box-shadow: 0 2rem 5rem #000;
     overflow: hidden;
     transform: translate(-50%, -50%) scale(0.5);
-    transition: all .4s .2s; }
+    transition: all .4s .2s;
+    z-index: 1000; }
     @media screen and (max-width: 56.25em) {
       .popup__content {
         width: 90%;
@@ -943,7 +944,14 @@ body {
     transform: scale(80); }
   .navigation__checkbox:checked ~ .navigation__nav {
     opacity: 1;
-    width: 100%; }
+    width: 100%;
+    visibility: visible; }
+  .navigation__checkbox ~ .navigation__background {
+    transform: scale(1); }
+  .navigation__checkbox ~ .navigation__nav {
+    opacity: 0;
+    width: 0;
+    visibility: hidden; }
   .navigation__icon {
     position: relative;
     margin-top: 3.5rem; }
@@ -985,11 +993,6 @@ body {
   .navigation__checkbox:checked + .navigation__button .navigation__icon:after {
     transform: rotate(-135deg);
     bottom: 0; }
-  .inactive .navigation__background {
-    transform: scale(1); }
-  .inactive .navigation__nav {
-    opacity: 0;
-    width: 0; }
 
 .banner {
   width: 100vw;
