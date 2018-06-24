@@ -1,0 +1,14 @@
+body {
+    font-family: "Fira Sans";
+}
+
+.navbar-brand {
+    font-family: "Megrim";
+    font-size: 2rem; 
+    line-height: 1; 
+    font-weight: 900;
+}
+.nav-item {
+    line-height: 0.9;
+    vertical-align: top;
+}

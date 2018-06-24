@@ -1,0 +1,183 @@
+:root {
+    --icon-size: 55px;
+}
+body {
+    font-family: "Source Sans Pro";
+    overflow-x: hidden;
+}
+
+.navbar-brand {
+    font-family: "Carter One";
+    font-size: 45px;
+    line-height: 0.7;
+    background: linear-gradient(to left, rgb(230, 47, 55), rgb(240, 255, 37), rgb(98, 223, 223), rgb(22, 54, 252));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 1em !important;
+}
+.nav-item .active {
+    border-bottom: #fff 3px solid;
+    padding: 0 !important;
+    padding-bottom: 3px !important;
+}
+
+.carousel-item {
+    height: 350px;
+}
+
+.carousel-image-1,
+.carousel-image-2,
+.carousel-image-3 {
+    background-size: cover !important;
+}
+
+.carousel-image-1 {
+    background: url("img/image1.jpg");
+}
+.carousel-image-2 {
+    background: url("img/image2.jpg");
+}.carousel-image-3 {
+    background: url("img/image3.jpg");
+}
+
+.fa {
+    font-size: var(--icon-size);
+}
+
+#services .fa {
+    font-size: 16px;
+}
+
+.nav-item .active {
+    margin: 0 1rem;
+}
+
+#homeHeading {
+    position: relative;
+    min-height: 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/lights.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+}
+
+#videoPlay {
+    min-height: 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/media.jpg");
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+}
+
+#mainFooter {
+    background: #000;
+}
+
+#pageHeader {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("img/lights.jpg");
+    background-position: 0 -360px;
+    background-attachment: fixed;
+    border-bottom: 1px #eee solid;
+    height: 230px;
+}
+
+#testimonialSection {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), url("img/lights.jpg");
+    background-position: center;
+}
+#services * {
+    border-radius: 0 !important;
+}
+
+#services .card::before {
+    content: "1 Year";
+    position: absolute;
+    display: block;
+    background: #000;
+    color: #fff;
+    transform: rotate(-45deg);
+    padding: 0 30px;
+    left: -8%;
+    top: 3%;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+#services .card {
+    transition: 0.5s transform;
+}
+#services .card:hover {
+    transform: scale(1.08);
+    z-index: 10;
+}
+#services .card-header h3{
+    /* color: #fff !important; */
+    font-size: 40px;
+    line-height: 0.7;
+    padding-top: 0.8rem;
+    font-weight: 300;
+    font-variant: small-caps;
+    text-align: right;
+}
+#services .card-title {
+    font-weight: 300;
+    font-size: 45px;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    padding-bottom: 0.7rem;
+}
+
+#services .list-group-item {
+    font-size: 20px;
+    font-variant: small-caps;
+}
+
+#services .bg-dark {
+    color: #fff !important;
+}
+
+#services .fa {
+    border: 2px solid;
+    height: 30px;
+    width: 30px;
+    border-radius: 100px !important;
+    line-height: calc(30px - 5px);
+    text-align: center;
+}
+
+#services .btn {
+    font-size: 24px;
+    color: #ccc !important;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#services .btn:hover {
+    color: #fff !important;
+}
+#services .btn-dark:hover {
+    background: #333 !important;
+}
+
+#faq {
+    background: #333;
+}
+
+#faq .card {
+    background: #222 !important;
+    color: #fff !important;
+}
+
+#faq .card a {
+    color: #fff !important;
+    text-decoration: none !important;
+}

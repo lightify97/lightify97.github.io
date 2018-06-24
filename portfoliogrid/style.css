@@ -1,0 +1,59 @@
+*:not(.btn) {
+    border-radius: 0 !important;
+}
+
+#mainHeader img {
+    width: 100%;
+    height: 100%;
+}
+
+.bg-black {
+    background: #131313;
+    color: #fff;
+}
+
+#mainHeader .fa {
+    font-size: 30px;
+}
+
+#nameBar a {
+    text-decoration: none !important;
+    color: #fff;
+}
+#nameBar a:hover {
+    color: #c0ffee;
+}
+
+.port-item {
+    width: 25%;
+}
+
+.port-item .fa {
+    /* font-size: 3em !important; */
+}
+
+.port-item:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#contact .fa {
+    font-size: 23px;
+}
+
+@media (min-width: 1129px) {
+    .port-item {
+        padding: 4rem !important;
+    }
+}
+
+@media (max-width: 568px) {
+    #nameBar .fa{
+        font-size: 15px;
+    }
+    #nameBar h1 {
+        font-size: 2em !important;
+        padding: 0;
+        margin-left: -1em;
+    }
+}

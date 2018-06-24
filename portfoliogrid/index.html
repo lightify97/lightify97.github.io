@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio Grid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../dist/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="../dist/bootstrap.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <header id="mainHeader">
+            <div class="row no-gutters">
+                <div class="col-lg-4 col-md-5 col-sm-12">
+                    <img src="img/person1.jpg" alt="Me">
+                </div>
+                <div class="col-lg-8 col-md-7 col-sm-12">
+                    <div class="d-flex flex-column">
+                        <div class="p-5 bg-dark text-white d-flex justify-content-between align-items-center" id="nameBar">
+                          <h1 class="display-4 text-uppercase"><span class="font-weight-bold">J</span>ohn <span class="font-weight-bold">D</span>oe</h1>
+                            <div><a href="#"><i class="fa fa-twitter"></i></a></div>
+                            <div><a href="#"><i class="fa fa-facebook"></i></a></div>
+                            <div><a href="#"><i class="fa fa-instagram"></i></a></div>
+                            <div><a href="#"><i class="fa fa-github"></i></a></div>
+                        </div>
+                        <div class="p-4 bg-black">Experienced Full Stack Web Developer</div>
+                        <div class="d-flex text-white align-items-stretch text-center">
+                            <div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#home">
+                                <i class="fa fa-home d-block"></i> Home
+                            </div>
+                            <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#resume">
+                                    <i class="fa fa-graduation-cap d-block"></i> Resume
+                            </div>
+                            <div class="port-item p-4 bg-warning" data-toggle="collapse" data-target="#work">
+                                    <i class="fa fa-folder-open d-block"></i> Work
+                            </div>
+                            <div class="port-item p-4 bg-danger" data-toggle="collapse" data-target="#contact">
+                                    <i class="fa fa-envelope d-block"></i> Contact
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Home -->
+        <div id="home" class="collapse show">
+            <div class="card card-body bg-primary text-white py-5">
+                <h2>Welcome to My Page</h2>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, expedita?</p>
+            </div>
+            <div class="card card-body py-5">
+                <h3>My Skills</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sequi pariatur animi cupiditate dolore voluptatem veritatis totam error incidunt quam.</p>
+                <hr>
+                <h4>HTML</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 100%;"></div>
+                </div>
+                <h4>CSS</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 90%;"></div>
+                </div>
+                <h4>JavaScript</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 80%;"></div>
+                </div>
+                <h4>PHP</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 40%;"></div>
+                </div>
+                <h4>Python</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Resume -->
+        <div class="collapse" id="resume">
+            <div class="card card-body bg-success text-white py-5">
+                <h2>My Resume</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, sunt!</p>
+            </div>
+            <div class="card card-body py-5">
+                <h3>Where Have I Worked?</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur delectus impedit et ipsam reiciendis possimus reprehenderit dicta veniam, iste at.</p>
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Devmasters</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, tempora.</p>
+                            <p class="p-2 bg-dark text-light mb-3">
+                                Position: Full Stack Developer
+                            </p>
+                            <p class="p-2 bg-dark text-light mb-3">
+                                    (555) 555-555
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-muted">Dates: 2015-2017</h6>
+                        </div>
+                    </div>
+                    <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Websites Pro</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, tempora.</p>
+                                <p class="p-2 bg-dark text-light mb-3">
+                                    Position: Front End Developer
+                                </p>
+                                <p class="p-2 bg-dark text-light mb-3">
+                                        (555) 555-523
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <h6 class="text-muted">Dates: 2013-2015</h6>
+                            </div>
+                    </div>
+                    <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">123 Designs</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, tempora.</p>
+                                <p class="p-2 bg-dark text-light mb-3">
+                                    Position: Designer
+                                </p>
+                                <p class="p-2 bg-dark text-light mb-3">
+                                        (555) 234-2359
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <h6 class="text-muted">Dates: 2010-2013</h6>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work -->
+        <div class="collapse" id="work">
+                <div class="card card-body bg-warning text-white py-5">
+                    <h2>My Portfolio</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, sunt!</p>
+                </div>
+                <div class="card card-body py-5">
+                    <h3>What Have I Built?</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur delectus impedit et ipsam reiciendis possimus reprehenderit dicta veniam, iste at.</p>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-md-3">
+                        <a href="http://unsplash.it/1200/768.jpg?image=355" data-toggle="lightbox">
+                            <img src="http://unsplash.it/600.jpg?image=355" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                            <a href="http://unsplash.it/1200/768.jpg?image=234" data-toggle="lightbox">
+                                <img src="http://unsplash.it/600.jpg?image=234" alt="" class="img-fluid">
+                            </a>
+                    </div>
+                    <div class="col-md-3">
+                            <a href="http://unsplash.it/1200/768.jpg?image=77" data-toggle="lightbox">
+                                <img src="http://unsplash.it/600.jpg?image=77" alt="" class="img-fluid">
+                            </a>
+                    </div>
+                    <div class="col-md-3">
+                            <a href="http://unsplash.it/1200/768.jpg?image=197" data-toggle="lightbox">
+                                <img src="http://unsplash.it/600.jpg?image=197" alt="" class="img-fluid">
+                            </a>
+                    </div>
+                </div>
+                <div class="row no-gutters mb-3">
+                        <div class="col-md-3">
+                            <a href="http://unsplash.it/1200/768.jpg?image=22" data-toggle="lightbox">
+                                <img src="http://unsplash.it/600.jpg?image=22" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                                <a href="http://unsplash.it/1200/768.jpg?image=99" data-toggle="lightbox">
+                                    <img src="http://unsplash.it/600.jpg?image=99" alt="" class="img-fluid">
+                                </a>
+                        </div>
+                        <div class="col-md-3">
+                                <a href="http://unsplash.it/1200/768.jpg?image=83" data-toggle="lightbox">
+                                    <img src="http://unsplash.it/600.jpg?image=83" alt="" class="img-fluid">
+                                </a>
+                        </div>
+                        <div class="col-md-3">
+                                <a href="http://unsplash.it/1200/768.jpg?image=177" data-toggle="lightbox">
+                                    <img src="http://unsplash.it/600.jpg?image=177" alt="" class="img-fluid">
+                                </a>
+                        </div>
+                    </div>
+            </div>
+        <!-- Contact -->
+
+
+        <div class="collapse" id="contact">
+                <div class="card card-body bg-danger text-white py-5">
+                    <h2>Contact</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, sunt!</p>
+                </div>
+                <div class="card card-body py-5">
+                    <h3>Get In Touch</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur delectus impedit et ipsam reiciendis possimus reprehenderit dicta veniam, iste at.</p>
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-prepend ">
+                                    <span class="input-group-text bg-danger text-dark"><i class="fa fa-user"></i></span>
+                                </div>
+                                <input type="text" class="form-control bg-dark text-light" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                                <div class="input-group input-group-lg">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group-text bg-danger text-dark"><i class="fa fa-envelope"></i></span>
+                                    </div>
+                                    <input type="email" class="form-control bg-dark text-light" placeholder="Email">
+                                </div>
+                        </div>
+                        <div class="form-group">
+                                <div class="input-group input-group-lg">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group-text bg-danger text-dark"><i class="fa fa-pencil"></i></span>
+                                    </div>
+                                    <textarea name="message" placeholder="Message" rows="5" class="form-control bg-dark text-light"></textarea>
+                                </div>
+                        </div>
+                        <input type="submit" value="Submit" class="btn btn-danger btn-block">
+                    </form>
+                </div>
+            </div>
+
+        <footer id="mainFooter" class="p-5 bg-dark text-white">
+            <div class="row">
+                <div class="col-md-6 offset-md-5">
+                    <a href="#" class="btn btn-outline-light"><i class="fa fa-cloud"></i> Download My Resume</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+<script src="../dist/jquery.js"></script>
+<script src="../dist/popper.js"></script>
+<script src="../dist/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+<script>
+    $('.port-item').on('click', function(){
+        $('.collapse').collapse('hide');
+    });
+
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+</script>
+</body>
+</html>

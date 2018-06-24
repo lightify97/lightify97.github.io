@@ -1,0 +1,78 @@
+:root {
+    --primary-color: rgb(50, 146, 166);
+}
+* {
+    border-radius: 0 !important;
+}
+body {
+    font-family: "Playfair Display";
+    margin-top: 6rem;
+    overflow-x: hidden;
+}
+
+.navbar-brand h3{
+    font-size: 3rem;
+    line-height: 1;
+    /* color: var(--primary-color); */
+}
+.navbar-brand img {
+    vertical-align: top;
+}
+.nav-link {
+    /* color: #3292a6  !important; */
+    font-size: 1.1rem;
+    border-bottom: 2px solid transparent;
+    padding: 0 !important;
+    transition: border 1s;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid #000;
+}
+.navbar {
+    box-shadow: 2px 2px 5px var(--primary-color);
+    opacity: 1 !important;
+}
+
+#showcase {
+    background: linear-gradient(rgba(50, 146, 166, 0.7), rgba(50, 146, 166, 0.7)), url('img/mountains.jpg');
+    background-position: center;
+    min-height: 600px;
+    width: 100%;
+    height: 100vh;
+    margin-top: -5.5rem;
+}
+.b-primary {
+    background-color: #3992a6;
+    border-color: #3992a6;
+}
+.b-primary:hover {
+    background-color: #11829b;
+    border-color: #3992a6;
+}
+.t-primary {
+    color: #3992a6;
+}
+
+.info-header {
+    width: 50%;
+    margin: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+#authors .fa {
+    color: #ddd;
+    font-size: 20px;
+}
+
+#authors .fa:hover {
+    color: #333;
+}
+
+#authors .card:hover {
+    background: var(--primary-color);
+}
+
+#authors .card:hover .text-muted {
+    color: #fff !important; 
+}

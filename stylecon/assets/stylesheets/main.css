@@ -57,10 +57,33 @@
  *            Custom Styles
  *====================================
  */
+
+ html {
+     font-size: 62.5%;
+ }
+
 body {
     background: #112738;
     color: #888;
-    font: 300 16px/22px "Fira Sans", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 300 1.66rem/2.2rem "Fira Sans", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media screen and (max-width: 920px){
+    html {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    html {
+        font-size: 40%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    html {
+        font-size: 35%;
+    }
 }
 /* 
  *====================================
@@ -75,12 +98,12 @@ body {
 }
 .container, .grid {
     margin: 0 auto;
-    width: 960px;
+    width: 96rem;
 }
 
 .container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 .col-1-3 {
     width: 33.33%;
@@ -115,12 +138,12 @@ body {
  *=========================================
  */
 .row, .row-alt {
-     min-width: 960px;
+     min-width: 96rem;
  }
 .row {
     background: #ffffff;
-    min-width: 960px;
-    padding: 66px 0 44px 0;
+    min-width: 96rem;
+    padding: 6.6rem 0 4.4rem 0;
 }
 .row-alt {
     background: #cbe2c1;
@@ -128,7 +151,7 @@ body {
     background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
     background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
     background: linear-gradient(to right, #a1d3b0, #f6f1d3);
-    padding: 44px 0 22px 0;
+    padding: 4.4rem 0 2.2rem 0;
 }
 /*
  *=========================================
@@ -137,24 +160,24 @@ body {
  */
 
 h1, h3, h4, h5, p {
-    margin-bottom: 22px;
+    margin-bottom: 2.2rem;
 }
 h1, h2, h3, h4 {
     color: #648880;
 }
 h1 {
-    font-size: 36px;
-    line-height: 44px
+    font-size: 3.6rem;
+    line-height: 4.4rem;
 }
 h2 {
-    font-size: 26px;
-    line-height: 44px;
+    font-size: 2.6rem;
+    line-height: 4.4rem;
 }
 h3 {
-    font-size: 21px;
+    font-size: 2.1rem;
 }
 h4 {
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 strong {
     font-weight: 400;
@@ -172,8 +195,8 @@ cite, em {
     text-align: center;
 }
 .lead p{
-    font-size: 21px;
-    line-height: 33px;
+    font-size: 2.1rem;
+    line-height: 3.3rem;
 }
 /*
  *===============================
@@ -191,7 +214,7 @@ a {
     color: #a9b2b9;
 }
 p a {
-    border-bottom: 3px solid #aed8b5;
+    border-bottom: .3rem solid #aed8b5;
 }
 .primary-header a, .primary-footer a {
     color: #fff;
@@ -206,19 +229,19 @@ p a {
  */
 
 .btn {
-    border-radius: 5px;
+    border-radius: .5rem;
     color: #ffffff;
     cursor: pointer;
     display: inline-block;
     font-weight: 400;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.05rem;
     margin: 0;
     text-transform: uppercase;
 }
 
 .btn-alt {
-    border: 1px solid #dfe2e5;
-    padding: 10px 30px;
+    border: .1rem solid #dfe2e5;
+    padding: 1rem 3rem;
 }
 .btn-alt:hover {
     background: #ffffff;
@@ -227,7 +250,7 @@ p a {
 
 .btn-default {
     background: #648880;
-    font: 400 15px/15px "Fira Sans";
+    font: 400 1.5rem/1.5rem "Fira Sans";
     padding: 4% 8%;
     height: 3.5em;
     border: none;
@@ -244,32 +267,31 @@ p a {
 
 .hero {
     color: #ffffff;
-    line-height: 44px;
-    padding: 22px 80px 66px 80px;
+    line-height: 4.4rem;
+    padding: 2.2rem 8rem 6.6rem 8rem;
     text-align: center;
 }
 .hero h2 {
-    font-size: 36px;
+    font-size: 3.6rem;
 }
 .hero p {
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 .teaser {
-    box-shadow: 2px 2px 20px rgba(64,88, 80,.9);
-    border-radius: 6px;
-    height: 26rem;
-    vertical-align: top;
+    box-shadow: .2rem .2rem 2rem rgba(64,88, 80,.9);
+    border-radius: .6rem;
+    vertical-align: text-top;
     margin-left: 3%;
     width: 30%;
 }
 .teaser img {
     display: block;
     max-width: 100%;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
+    border-top-right-radius: .3rem;
+    border-top-left-radius: .3rem;
     margin-bottom: 8%;
     margin-top: -46%;
-    height:60%;
+    height: 25rem;
 }
 .teaser h3, .teaser p {
     text-align: center;
@@ -277,7 +299,7 @@ p a {
 }
 .teaser h5 {
     color: #293f50;
-    font-size: 30px;
+    font-size: 3rem;
     font-style: oblique;
     font-weight: 300;
     text-align: left;
@@ -291,13 +313,13 @@ p a {
  *=========================================
  */
 .tagline {
-    margin: 66px 0 22px 0;
+    margin: 6.6rem 0 2.2rem 0;
     text-align: right;
 }
 .primary-nav {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 400;
-    letter-spacing: .5px;
+    letter-spacing: 0.05rem;
     text-transform: uppercase;
 }
 /*
@@ -311,7 +333,7 @@ p a {
 .nav li {
     display: inline-block;
     vertical-align: top;
-    margin: 0 10px;
+    margin: 0 1rem;
     font-weight: 400;
 }
 .nav li:last-child {
@@ -325,14 +347,14 @@ p a {
  */
 
 .logo {
-    border-top: 8px solid #648880;
+    border-top: .8rem solid #648880;
     float: left;
-    font-size: 48px;
-    line-height: 44px;
-    letter-spacing: .5px;
-    padding: 40px 0 22px 0;
+    font-size: 4.8rem;
+    line-height: 4.4rem;
+    letter-spacing: .05rem;
+    padding: 4rem 0 2.2rem 0;
     font-weight: 300;
-    text-shadow: 2px 4px 1px rgba(0, 0, 0,.5);
+    text-shadow: .2rem .4rem .1rem rgba(0, 0, 0,.5);
     text-transform: uppercase;
 }
 
@@ -344,8 +366,8 @@ p a {
 
 .primary-footer {
     color: #648880;
-    font-size: 14px;
-    padding: 44px 0 44px 0;
+    font-size: 1.4rem;
+    padding: 4.4rem 0 4.4rem 0;
 }
 .primary-footer small {
     float: left;
@@ -353,11 +375,11 @@ p a {
 }
 
 footer #github {
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 footer #heart {
     color:#F73A3A;
-    font-size:30px;
+    font-size:3rem;
 }
 
 /*
@@ -367,23 +389,23 @@ footer #heart {
  */
 
 .speaker-info {
-    border: 1px solid #dfe2e5;
-    border-radius: 5px;
-    margin-top: 88px;
+    border: .1rem solid #dfe2e5;
+    border-radius: .5rem;
+    margin-top: 8.8rem;
     margin-left: 10%;
-    padding-bottom: 22px;
+    padding-bottom: 2.2rem;
     text-align: center;
 }
 .speaker-info img{
     display: inline-block;
-    height: 130px;
+    height: 13rem;
     border-radius: 50%;
     vertical-align: top;
-    margin-top: -70px;
-    margin-bottom: 20px;
+    margin-top: -7rem;
+    margin-bottom: 2rem;
 }
 .speaker {
-    margin-bottom: 44px;
+    margin-bottom: 4.4rem;
 }
 /*
  *=========================================
@@ -394,15 +416,15 @@ footer #heart {
     height: 50vh;
 }
 .venue-theatre{
-    margin-bottom: 66px;
+    margin-bottom: 6.6rem;
 }
 .venue-hotel {
-    margin-bottom: 22px;
+    margin-bottom: 2.2rem;
 }
 .venue-map {
     float: right;
-    box-shadow: 1px 1px 20px black;
-    border-radius: 5px;
+    box-shadow: .1rem .1rem 2rem black;
+    border-radius: .5rem;
 }
 /*
  *=========================================
@@ -411,7 +433,7 @@ footer #heart {
  */
 .features {
     list-style-type: square;
-    padding-left: 30px;
+    padding-left: 3rem;
 }
 .form-description {
     text-align: justify;
@@ -420,34 +442,34 @@ footer #heart {
 .register-form label {
     display: block;
     color: #648880;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     font-weight: 400;
     margin-top: -5%;
-    padding-top:40px;
+    padding-top:4rem;
 }
 .register-form textarea {
-    height: 120px;
+    height: 12rem;
 }
 .register-form select {
-    border-radius: 3px;
+    border-radius: .3rem;
     color: #888;
     font-weight: bold;
-    font-size: 16px;
-    width: 60px;
-    height: 39px;
+    font-size: 1.6rem;
+    width: 6rem;
+    height: 3.9rem;
     padding-left: 4%;
 }
 .register-form textarea, .input-box {
-    border: 1px solid lightgray;
+    border: .1rem solid lightgray;
     display: block;
-    font: 400 normal 15px/12px "Fira Sans";
+    font: 400 normal 1.5rem/1.2rem "Fira Sans";
     width: 90%;
-    border-radius: 5px;
+    border-radius: .5rem;
     padding: 3%;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 .input-box {
-    height: 3em;
+    height: 4rem;
 }
 
 /*
@@ -456,7 +478,7 @@ footer #heart {
  *=========================================
  */
 table {
-    margin-bottom: 44px;
+    margin-bottom: 4.4rem;
     width: 100%;
 }
 table a {
@@ -469,11 +491,11 @@ table:last-child {
     margin-bottom: 0;
 }
 th, td {
-    padding-bottom: 22px;
+    padding-bottom: 2.2rem;
     vertical-align: top;
 }
 th{
-    padding-right: 45px;
+    padding-right: 4.5rem;
     text-align: right;
     width: 20%;
 }
@@ -481,29 +503,29 @@ td {
     width: 40%;
 }
 thead {
-    line-height: 44px;
+    line-height: 4.4rem;
 }
 thead th, thead td{
     color: #648880;
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 tbody th {
     color: #a9b2b9;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 400;
-    padding-top: 22px;
+    padding-top: 2.2rem;
     text-transform: uppercase;
 }
 tbody td {
-    border-top: 1px solid #dfe2e5;
-    padding-top: 22px;
+    border-top: .1rem solid #dfe2e5;
+    padding-top: 2.2rem;
 }
 
 tbody td:first-of-type {
-    padding-right: 15px;
+    padding-right: 1.5rem;
 }
 tbody td:last-of-type {
-    padding-left: 15px;
+    padding-left: 1.5rem;
 }
 tbody td:only-of-type {
     padding-left: 0;
