@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|PT+Sans');
+
 :root {
     --bg-color: #333;
     --font-color: rgb(255, 255,255);
@@ -9,11 +11,11 @@ body {
     background: var(--bg-color);    
     color: var(--font-color);
     text-rendering: optimizeLegibility;
-    font-family: "Lato";
+    font-family: "Lato", sans-serif;
 }
 #brand {
     color: var(--primary-color);
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-size: 3rem;
     line-height: 0.7;
     font-weight: 300;

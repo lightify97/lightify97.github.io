@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
 :root {
     --primary-color: rgb(50, 146, 166);
 }
@@ -5,7 +7,7 @@
     border-radius: 0 !important;
 }
 body {
-    font-family: "Playfair Display";
+    font-family: "Playfair Display", serif;
     margin-top: 6rem;
     overflow-x: hidden;
 }

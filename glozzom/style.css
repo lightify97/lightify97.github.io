@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Carter+One|Source+Sans+Pro');
+
 :root {
     --icon-size: 55px;
 }
 body {
-    font-family: "Source Sans Pro";
+    font-family: "Source Sans Pro", sans-serif;
     overflow-x: hidden;
 }
 
 .navbar-brand {
-    font-family: "Carter One";
+    font-family: "Carter One", cursive;
     font-size: 45px;
     line-height: 0.7;
     background: linear-gradient(to left, rgb(230, 47, 55), rgb(240, 255, 37), rgb(98, 223, 223), rgb(22, 54, 252));
