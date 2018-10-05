@@ -3,7 +3,7 @@
 > This is some of the frontend stuff I've been working on.
 
 ## Go To [lightify97.github.io/stylecon](https://lightify97.github.io/stylecon)(A simple website)
-## GO To [lightify97.github.io/natours](https://lightify97.github.io/natours)(A complete CSS project)
+## GO To [lightify97.github.io/natours](https://lightify97.github.io/natours)(A complete CSS project and sass project)
 
 > Some Bootstrap4 Projects
 
@@ -13,3 +13,4 @@
 ## Go To [lightify97.github.io/glozzom](https://lightify97.github.io/glozzom)(A fullfledged company website)
 ## Go To [lightify97.github.io/portfoliogrid](https://lightify97.github.io/portfoliogrid)(Personal Portfolio)
 
+# More Coming Soon...
