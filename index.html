@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Muhammad Ramzan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:100,300,300i,400,500');
+    body {
+      background: #41295a;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      color: #FFF;
+      font-family: "Fira Sans Condensed"; 
+      overflow: hidden;
+    }
+    header {
+      margin-left: 10%;
+    }
+    
+    .heading, .title {
+      display: inline-block;
+    }
+    .heading {
+      font-size: 1.8em;
+      min-width: 35%;
+      float: left;
+      font-variant-caps: small-caps;
+      letter-spacing: -1px;
+      line-height: 0;
+    }
+    .heading h1 {
+      font-weight: 300;
+    }
+    .title {
+      font-weight: 300;
+      width: 50%;
+      margin-left: 4%;
+      margin-top: 3%;
+      float: left;
+    }
+  .projects {
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .list-title {
+    font-size: 3em;
+  }
+  .projects-list-item {
+    list-style-image: url("data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0MjYuNjY3IDQyNi42NjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQyNi42NjcgNDI2LjY2NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgo8Zz4KCTxnPgoJCTxwb2x5Z29uIHBvaW50cz0iMjkzLjMzMywxMzUuMDQgMTkwLjA4LDI0MC4yMTMgMTM3LjE3MywxODcuMDkzIDEwOC44LDIxNS40NjcgMTkyLjIxMywyOTguNjY3IDMyNi4xODcsMTY4Ljc0NyAgICIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTIxMy4zMzMsMEM5NS41MTMsMCwwLDk1LjUxMywwLDIxMy4zMzNzOTUuNTEzLDIxMy4zMzMsMjEzLjMzMywyMTMuMzMzczIxMy4zMzMtOTUuNTEzLDIxMy4zMzMtMjEzLjMzMyAgICBTMzMxLjE1NCwwLDIxMy4zMzMsMHogTTIxMy4zMzMsMzg4LjA1M2MtOTYuNDk1LDAtMTc0LjcyLTc4LjIyNS0xNzQuNzItMTc0Ljcyczc4LjIyNS0xNzQuNzIsMTc0LjcyLTE3NC43MiAgICBjOTYuNDQ2LDAuMTE3LDE3NC42MDIsNzguMjczLDE3NC43MiwxNzQuNzJDMzg4LjA1MywzMDkuODI5LDMwOS44MjksMzg4LjA1MywyMTMuMzMzLDM4OC4wNTN6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==");
+    list-style-position: inside;
+  }
+  .projects-list-item a,
+  footer a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 202, 189);
+    font-size: 32px;
+    margin-top: -2px;
+    font-weight: 300;
+    letter-spacing: -1px;    
+  }
+  .projects-list-item a::after {
+    content: " 🔗";
+    font-size: 0.7em;
+  }
+  .projects-list-item a:hover,
+  footer a:hover {
+    color: rgb(255, 125, 93);
+  }
+  footer {
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="heading">
+      <h1>Muhammad Ramzan</h1>
+    </div>
+    
+  </header>
+  <section class="projects">
+    <h2 class="list-title">Projects</h2>
+    <ul class="projects-list">
+      <li class="projects-list-item"><a target="_blank" href="https://lightify97.github.io/natours">Natours (A complete CSS and Sass project)</a></li>
+      <li class="projects-list-item"><a target="_blank" href="https://lightify97.github.io/stylecon">StyleCon (A simple website)</a></li>
+      <li class="projects-list-item"><a target="_blank" href="https://lightify97.github.io/blogen">Blogen (An Admin panel for blog system)</a></li>
+      <li class="projects-list-item"><a target="_blank" href="https://lightify97.github.io/portfoliogrid">Portfoliogrid (Personal Portfolio)</a></li>
+      <li class="projects-list-item"><a target="_blank" href="https://lightify97.github.io/glozzoom">Glozzom (A fullfledged company website)</a></li>
+      <li class="projects-list-item"><a target="_blank" href="https://lightify97.github.io/mizuxe">Mizuxe (A publication website)</a></li>
+      <li class="projects-list-item"><a target="_blank" href="https://lightify97.github.io/looplab">Looplab (A simple product page)</a></li>
+      <h3>More Coming Soon. . .</h3>
+    </ul>
+  </section>
+</main>
+<footer>
+  <small>Hosted with <span>&hearts;</span> by <a href="https://github.com">GitHub</a></small>
+  <div>Your Time: <span id="time"></span></div>
+</footer>
+<script>
+  function time() {
+    var time = new Date();
+    document.getElementById("time").innerText= time.toLocaleTimeString();
+  }
+  setInterval(time, 1000);
+</script>
+</body>
+</html>
