@@ -1,113 +1,224 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Muhammad Ramzan</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="favicon.png">
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:100,300,300i,400,500');
-    body {
-      background: #41295a;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      color: #FFF;
-      font-family: "Fira Sans Condensed"; 
-      overflow: hidden;
-    }
-    header {
-      margin-left: 10%;
-    }
-    
-    .heading, .title {
-      display: inline-block;
-    }
-    .heading {
-      font-size: 1.8em;
-      min-width: 35%;
-      float: left;
-      font-variant-caps: small-caps;
-      letter-spacing: -1px;
-      line-height: 0;
-    }
-    .heading h1 {
-      font-weight: 300;
-    }
-    .title {
-      font-weight: 300;
-      width: 50%;
-      margin-left: 4%;
-      margin-top: 3%;
-      float: left;
-    }
-  .projects {
-    display: inline-block;
-    width: 80%;
-    margin-left: 10%;
-  }
-  .list-title {
-    font-size: 3em;
-  }
-  .projects-list-item {
-    list-style-image: url("data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0MjYuNjY3IDQyNi42NjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQyNi42NjcgNDI2LjY2NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPgo8Zz4KCTxnPgoJCTxwb2x5Z29uIHBvaW50cz0iMjkzLjMzMywxMzUuMDQgMTkwLjA4LDI0MC4yMTMgMTM3LjE3MywxODcuMDkzIDEwOC44LDIxNS40NjcgMTkyLjIxMywyOTguNjY3IDMyNi4xODcsMTY4Ljc0NyAgICIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTIxMy4zMzMsMEM5NS41MTMsMCwwLDk1LjUxMywwLDIxMy4zMzNzOTUuNTEzLDIxMy4zMzMsMjEzLjMzMywyMTMuMzMzczIxMy4zMzMtOTUuNTEzLDIxMy4zMzMtMjEzLjMzMyAgICBTMzMxLjE1NCwwLDIxMy4zMzMsMHogTTIxMy4zMzMsMzg4LjA1M2MtOTYuNDk1LDAtMTc0LjcyLTc4LjIyNS0xNzQuNzItMTc0Ljcyczc4LjIyNS0xNzQuNzIsMTc0LjcyLTE3NC43MiAgICBjOTYuNDQ2LDAuMTE3LDE3NC42MDIsNzguMjczLDE3NC43MiwxNzQuNzJDMzg4LjA1MywzMDkuODI5LDMwOS44MjksMzg4LjA1MywyMTMuMzMzLDM4OC4wNTN6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==");
-    list-style-position: inside;
-  }
-  .projects-list-item a,
-  footer a{
-    display: inline-block;
-    text-decoration: none;
-    color: rgb(255, 202, 189);
-    font-size: 32px;
-    margin-top: -2px;
-    font-weight: 300;
-    letter-spacing: -1px;    
-  }
-  .projects-list-item a::after {
-    content: " 🔗";
-    font-size: 0.7em;
-  }
-  .projects-list-item a:hover,
-  footer a:hover {
-    color: rgb(255, 125, 93);
-  }
-  footer {
-    text-align: center;
-  }
-</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-<main>
-  <header>
-    <div class="heading">
-      <h1>Muhammad Ramzan</h1>
+
+<body id="home">
+  <nav class="container-fluid navbar sticky-top navbar-expand-lg navbar-light bg-none d-flex align-items-between"
+    id="home">
+    <a class="navbar-brand w-25" href="#">Lightify</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav w-100 d-flex justify-content-end">
+        <li class="nav-item active px-3">
+          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
-    
+  </nav>
+  <header class="heading container-fluid">
+    <div class="row min-vh-100 justify-content-between align-items-start">
+      <div class="col my-5">
+        <h3 class="intro display-4">
+          Hi there!
+        </h3>
+        <h1 class="intro">
+          I'm Ramzan
+        </h1>
+        <h3 class="intro display-4 mb-5">I'm a web developer. <br> Let's talk about your next project.</h3>
+        <div class="text-center mt-5">
+          <a class="btn btn-light border-0 px-5 py-3" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </div>
   </header>
-  <section class="projects">
-    <h2 class="list-title">Projects</h2>
-    <ul class="projects-list">
-      <li class="projects-list-item"><a target="_blank" href="https://lightify97.github.io/natours">Natours (A complete CSS and Sass project)</a></li>
-      <li class="projects-list-item"><a target="_blank" href="https://lightify97.github.io/stylecon">StyleCon (A simple website)</a></li>
-      <li class="projects-list-item"><a target="_blank" href="https://lightify97.github.io/blogen">Blogen (An Admin panel for blog system)</a></li>
-      <li class="projects-list-item"><a target="_blank" href="https://lightify97.github.io/portfoliogrid">Portfoliogrid (Personal Portfolio)</a></li>
-      <li class="projects-list-item"><a target="_blank" href="https://lightify97.github.io/glozzoom">Glozzom (A fullfledged company website)</a></li>
-      <li class="projects-list-item"><a target="_blank" href="https://lightify97.github.io/mizuxe">Mizuxe (A publication website)</a></li>
-      <li class="projects-list-item"><a target="_blank" href="https://lightify97.github.io/looplab">Looplab (A simple product page)</a></li>
-      <h3>More Coming Soon. . .</h3>
-    </ul>
-  </section>
-</main>
-<footer>
-  <small>Hosted with <span>&hearts;</span> by <a href="https://github.com">GitHub</a></small>
-  <div>Your Time: <span id="time"></span></div>
-</footer>
-<script>
-  function time() {
-    var time = new Date();
-    document.getElementById("time").innerText= time.toLocaleTimeString();
-  }
-  setInterval(time, 1000);
-</script>
+  <main>
+    <section class="section projects container-fluid" id="projects">
+      <h2 class="section-title">Projects 👲</h2>
+      <div class="row">
+        <ul class="col projects-list clearfix">
+          <h3 class="section-headline text-left display-4 px-4">Making things</h3>
+          <li class="projects-list-item">
+            <a target="_blank" href="https://lightify97.github.io/projects/natours">Natours &mdash; A complete CSS and
+              Sass
+              project <i class="fas fa-external-link-square-alt"></i> </a>
+          </li>
+          <li class="projects-list-item">
+            <a target="_blank" href="https://lightify97.github.io/projects/stylecon">StyleCon &mdash; A simple website
+              <i class="fas fa-external-link-square-alt"></i> </a>
+          </li>
+          <li class="projects-list-item">
+            <a target="_blank" href="https://lightify97.github.io/projects/blogen">Blogen &mdash; An Admin panel for
+              blog System <i class="fas fa-external-link-square-alt"></i> </a>
+          </li>
+          <li class="projects-list-item">
+            <a target="_blank" href="https://lightify97.github.io/projects/portfoliogrid">Portfoliogrid &mdash; Personal
+              Portfolio <i class="fas fa-external-link-square-alt"></i> </a>
+          </li>
+          <li class="projects-list-item">
+            <a target="_blank" href="https://lightify97.github.io/projects/glozzoom">Glozzom &mdash;A fullfledged
+              company
+              website <i class="fas fa-external-link-square-alt"></i> </a>
+          </li>
+          <li class="projects-list-item">
+            <a target="_blank" href="https://lightify97.github.io/projects/mizuxe">Mizuxe &mdash; A publication website
+              <i class="fas fa-external-link-square-alt"></i> </a>
+          </li>
+          <li class="projects-list-item">
+            <a target="_blank" href="https://lightify97.github.io/projects/looplab">Looplab &mdash;A simple product page
+              <i class="fas fa-external-link-square-alt"></i> </a>
+          </li>
+          <li class="projects-list-item">
+            <a target="_blank" href="https://lightify97.github.io/projects/tictactoe">TicTacToe &mdash; The tictactoe
+              game in Javascript <i class="fas fa-external-link-square-alt"></i> </a>
+          </li>
+        </ul>
+        <img class="col projects-art w-50 img-fluid d-none d-lg-inline-block" src="img/programming.svg" alt="dev work">
+      </div>
+    </section>
+    <section class="section skills container-fluid" id="skills">
+      <h2 class="section-title">Skills 🗜️</h2>
+      <div class="row">
+        <img class="col w-25 d-none d-lg-inline-block skills-art img-fluid" src="img/undraw_up_to_date_rmbm.svg"
+          alt="skills">
+        <div class="col py-3 w-sm-100">
+          <h3 class="section-headline pl-4 display-4">Things I know</h3>
+          <ul class="skills-list row px-0">
+            <li class="skills-list-item px-0 col-4 col-md-3 "><i class="devicon-cplusplus-line"></i>
+              <p>C++</p>
+            </li>
+            <li class="skills-list-item px-0 col-4 col-md-3 "><i class="devicon-javascript-plain"></i>
+              <p>Javascript</p>
+            </li>
+            <li class="skills-list-item px-0 col-4 col-md-3 "><i class="devicon-typescript-plain"></i>
+              <p>Typescript
+              </p>
+            </li>
+            <li class="skills-list-item px-0 col-4 col-md-3 "><i class="devicon-python-plain"></i>
+              <p>Python</p>
+            </li>
+            <li class="skills-list-item px-0 col-4 col-md-3 "><i class="devicon-nodejs-plain-wordmark"></i>
+              <p>Node</p>
+            </li>
+            <li class="skills-list-item px-0 col-4 col-md-3 "><i class="devicon-html5-plain"></i>
+              <p>HTML5</p>
+            </li>
+            <li class="skills-list-item px-0 col-4 col-md-3 "><i class="devicon-css3-plain"></i>
+              <p>CSS</p>
+            </li>
+            <li class="skills-list-item px-0 col-4 col-md-3 "> <i class="devicon-sass-original"></i>
+              <p>SASS</p>
+            </li>
+            <li class="skills-list-item px-0 col-4 col-md-3 "><i class="devicon-bootstrap-plain"></i>
+              <p>Bootstrap</p>
+            </li>
+            <li class="skills-list-item px-0 col-4 col-md-3 "><i class="devicon-webpack-plain"></i>
+              <p>Webpack</p>
+            </li>
+            <li class="skills-list-item px-0 col-4 col-md-3 "><i class="devicon-vuejs-plain"></i>
+              <p>Vue</p>
+            </li>
+            <li class="skills-list-item px-0 col-4 col-md-3 "><i class="devicon-mocha-plain"></i>
+              <p>Mocha</p>
+            </li>
+            <li class="skills-list-item px-0 col-4 col-md-3 "><i class="devicon-react-plain"></i>
+              <p>React</p>
+            </li>
+            <li class="skills-list-item px-0 col-4 col-md-3 "><i class="devicon-mysql-plain"></i>
+              <p>Mysql</p>
+            </li>
+            <li class="skills-list-item px-0 col-4 col-md-3 "><i class="devicon-mongodb-plain"></i>
+              <p>MongoDB</p>
+            </li>
+            <li class="skills-list-item px-0 col-4 col-md-3 "><i class="devicon-git-plain"></i>
+              <p>Git</p>
+            </li>
+            <li class="skills-list-item px-0 col-4 col-md-3 "><i class="devicon-github-plain"></i>
+              <p>GitHub</p>
+            </li>
+            <li class="skills-list-item px-0 col-4 col-md-3 "><i class="devicon-docker-plain"></i>
+              <p>Docker</p>
+            </li>
+            <li class="skills-list-item px-0 col-4 col-md-3 "><i class="devicon-ubuntu-plain"></i>
+              <p>Ubuntu</p>
+            </li>
+            <li class="skills-list-item px-0 col-4 col-md-3 "> <i class="devicon-amazonwebservices-original"></i>
+              <p>AWS</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section contact container-fluid" id="contact">
+      <h2 class="section-title">Contact 📝</h2>
+      <div class="row">
+        <div class="col">
+          <h3 class="section-headline display-4 px-5">Drop a word</h3>
+          <ul class="contact-list">
+            <li class="contact-list-item">
+              <a target="_blank" href="##"><i class="fa fa-phone"></i>+92 (349) 9198217</a>
+            </li>
+            <li class="contact-list-item">
+              <a target="_blank" href="mailto:mramzanofficial97@gmail.com"><i class="fas fa-paper-plane"></i>E-Mail</a>
+            </li>
+            <li class="contact-list-item">
+              <a target="_blank" href="https://github.com/lightify97"><i class="fab fa-github"></i>Github</a>
+            </li>
+            <li class="contact-list-item">
+              <a href="https://www.linkedin.com/in/m-ramazan/" target="_blank"><i
+                  class="fab fa-linkedin"></i>linkedin</a>
+            </li>
+            <li class="contact-list-item">
+              <a href="https://twitter.com/lightify97" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <img src="img/contact.svg" alt="Contact" class="img-fluid col w-50 d-none d-lg-inline-block">
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <small>Hosted with <i class="fa fa-heart"></i> by
+      <a href="https://github.com"><i class="fab fa-github"></i></a>
+    </small>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>

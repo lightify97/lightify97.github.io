@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&&family=Pacifico&display=swap");
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Montserrat", monospace;
+  background: linear-gradient(to right, rgba(255, 82, 111, 0.8) 0%, rgba(255, 41, 55, 0.8) 50%, rgba(255, 175, 26, 0.8) 100%);
+  margin: 0;
+  padding: 0; }
+
+body::-webkit-scrollbar {
+  background-color: #06162e;
+  width: 0.5%; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ff526f; }
+
+.heading {
+  background-image: linear-gradient(to right, rgba(255, 82, 111, 0.8) 0%, rgba(255, 41, 55, 0.8) 50%, rgba(255, 175, 26, 0.8) 100%), url("img/code.svg");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #eee;
+  max-width: 100vw; }
+
+.heading h1 {
+  color: #eee;
+  text-transform: uppercase;
+  font-size: 5.5em;
+  margin: 0;
+  user-select: none;
+  font-weight: 900; }
+
+.navbar {
+  background: #fc4c58;
+  background-image: linear-gradient(to right, rgba(255, 82, 111, 0.5) 0%, rgba(255, 41, 55, 0.5) 50%, rgba(255, 175, 26, 0.5) 100%);
+  padding-top: 0; }
+
+.navbar-brand {
+  font-family: "Pacifico", serif;
+  text-transform: lowercase !important;
+  font-size: 3em;
+  margin: 0;
+  text-align: center; }
+
+.navbar li {
+  font-family: "Pacifico", serif;
+  font-size: 1.5em;
+  font-weight: 400; }
+
+.nav-item a {
+  border-bottom: 2px solid transparent;
+  text-transform: lowercase !important; }
+
+.nav-item.active a {
+  font-weight: 500;
+  border-color: #06162e;
+  width: fit-content; }
+
+.section {
+  margin-bottom: 5em;
+  max-height: 100vh;
+  position: relative; }
+
+.section-title {
+  font-size: 5em;
+  text-transform: uppercase;
+  padding-top: 1rem;
+  text-align: center;
+  color: #eee;
+  font-weight: 900; }
+
+.section::before {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 10em;
+  line-height: 0;
+  font-weight: 900;
+  color: rgba(238, 238, 238, 0.5);
+  font-family: "Pacifico"; }
+
+.projects {
+  padding: 2em;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  margin: 0; }
+
+.projects::before {
+  content: "\25c9"; }
+
+.projects-list {
+  margin: 2em 0; }
+
+.projects-list-item {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.2rem 1.5rem;
+  margin-bottom: 0.5em;
+  border: none;
+  border-radius: 2rem 10rem 2rem 10rem;
+  text-align: left;
+  list-style: none;
+  float: left;
+  clear: left; }
+
+.projects-list-item:hover {
+  background: linear-gradient(to right, #ff526f 0%, #ffaf1a 100%); }
+
+.projects-list-item a {
+  text-decoration: none;
+  color: #06162e; }
+
+.skills::before {
+  content: "\2605"; }
+
+.skills-list {
+  list-style: none; }
+
+.skills-list-item {
+  color: #06162e;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  text-align: center; }
+
+.skills-list-item i {
+  font-size: 1.5em; }
+
+.skills-list-item:hover {
+  backface-visibility: hidden;
+  transform: scale(1.1);
+  transition: transform 1s ease-out; }
+
+.contact::before {
+  content: "\22b6"; }
+
+.contact-list {
+  list-style: none; }
+
+.contact-list-item {
+  font-size: 2.5em; }
+
+.contact-list-item a {
+  color: #06162e;
+  text-transform: lowercase;
+  font-weight: 400; }
+
+.contact-list-item i {
+  padding-right: 1em; }
+
+.la-github {
+  line-height: 1em;
+  font-size: 1em;
+  display: inline-block; }
+
+a:link {
+  text-decoration: none;
+  text-transform: uppercase; }
+
+a:visited,
+a:focus {
+  outline: 0;
+  border: 0; }
+
+footer {
+  background: #06162e;
+  color: #eee;
+  text-align: center;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  min-height: 2vh; }
+
+footer .fa-heart {
+  color: #ff526f; }
+
+footer i {
+  color: #eee; }
+
+@media (max-width: 720px) {
+  .navbar-brand {
+    font-size: 2rem; }
+  .intro {
+    font-size: 2.5rem; }
+  section::before {
+    display: none; }
+  h1.intro {
+    font-size: 3rem; }
+  .section-title {
+    font-size: 2.5em; }
+  .section {
+    padding: 0; }
+  .projects-list-item {
+    font-size: 0.8em;
+    width: 100%;
+    font-weight: bold; }
+  .contact-list-item {
+    font-size: 1.4rem; }
+  .contact-list-item a {
+    font-weight: bold; }
+  .section-headline {
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 400; }
+  .skills-list-item {
+    font-size: 0.9em;
+    font-weight: bold; }
+  .skills-list-item i {
+    font-size: 1.5em; } }
