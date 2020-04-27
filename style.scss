@@ -96,6 +96,9 @@ body {
     color: $light;
     font-weight: 900;
   }
+  &-headline {
+    text-align: center;
+  }
   &::before {
     position: absolute;
     top: 5%;
@@ -257,6 +260,7 @@ footer {
 
   .section-title {
     font-size: 2.5em;
+    text-align: center;
   }
 
   .section {
@@ -277,9 +281,11 @@ footer {
   }
 
   .section-headline {
-    font-size: 1.4em;
-    text-align: center;
+    font-size: 1.4em; 
+    text-align: center !important;
     font-weight: 400;
+    padding-bottom: 1em;
+
   }
 
   .skills-list-item {
