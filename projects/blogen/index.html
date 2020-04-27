@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Blogen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="../dist/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+    <div class="container">
+      <a href="index.html" class="navbar-brand mr-3">Blogen</a>
+      <button class="navbar-toggler float-right" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item px-2">
+            <a href="index.html" class="nav-link active">Dashboard</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="posts.html" class="nav-link">Posts</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="categories.html" class="nav-link">Categories</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="users.html" class="nav-link">Users</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown mr-3">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-user"></i> Welcome John
+            </a>
+            <div class="dropdown-menu">
+              <a href="profile.html" class="dropdown-item">
+                <i class="fa fa-user-circle"></i> Profile
+              </a>
+              <a href="settings.html" class="dropdown-item">
+                <i class="fa fa-gear"></i> Settings
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">
+              <i class="fa fa-user-times"></i> Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="mainHeader" class="py-2 bg-primary text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h1 class="navbar-brand">
+            <i class="fa fa-gear"></i> Dashboard</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Actions -->
+
+  <section id="actions" class="py-4 mb-4 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#addPostModal">
+            <i class="fa fa-plus"></i> Add Post
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#addCategoryModal">
+            <i class="fa fa-plus"></i> Add Category
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#" class="btn btn-warning btn-block" data-toggle="modal" data-target="#addUserModal">
+            <i class="fa fa-plus"></i> Add User
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Posts -->
+  <section id="posts">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="card">
+            <div class="card-header">
+              <h4>Latest Posts</h4>
+            </div>
+            <table class="table table-striped">
+              <thead class="thead-dark">
+                <th>#</th>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Date Posted</th>
+                <th></th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">1</td>
+                  <td>Post One</td>
+                  <td>Web Development</td>
+                  <td>July 11, 2018</td>
+                  <td><a href="details.html" class="btn btn-secondary"><i class="fa fa-angle-double-right"></i>
+                      Details</a></td>
+                </tr>
+                <tr>
+                  <td scope="row">2</td>
+                  <td>Post Two</td>
+                  <td>Tech Gadgets</td>
+                  <td>July 1, 2018</td>
+                  <td><a href="details.html" class="btn btn-secondary"><i class="fa fa-angle-double-right"></i>
+                      Details</a></td>
+                </tr>
+                <tr>
+                  <td scope="row">3</td>
+                  <td>Post Three</td>
+                  <td>Health &amp; Welness</td>
+                  <td>April 11, 2018</td>
+                  <td><a href="details.html" class="btn btn-secondary"><i class="fa fa-angle-double-right"></i>
+                      Details</a></td>
+                </tr>
+                <tr>
+                  <td scope="row">4</td>
+                  <td>Post Four</td>
+                  <td>Business</td>
+                  <td>July 14, 2018</td>
+                  <td><a href="details.html" class="btn btn-secondary"><i class="fa fa-angle-double-right"></i>
+                      Details</a></td>
+                </tr>
+                <tr>
+                  <td scope="row">5</td>
+                  <td>Post Five</td>
+                  <td>Web Development</td>
+                  <td>June 11, 2018</td>
+                  <td><a href="details.html" class="btn btn-secondary"><i class="fa fa-angle-double-right"></i>
+                      Details</a></td>
+                </tr>
+                <tr>
+                  <td scope="row">6</td>
+                  <td>Post Six</td>
+                  <td>Web Development</td>
+                  <td>April 11, 2018</td>
+                  <td><a href="details.html" class="btn btn-secondary"><i class="fa fa-angle-double-right"></i>
+                      Details</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center bg-primary text-light mb-3">
+            <div class="card-body">
+              <h3>Posts</h3>
+              <h1 class="display-4"><i class="fa fa-pencil"></i> 6</h1>
+              <a href="posts.html" class="btn btn-sm btn-outline-light">View</a>
+            </div>
+          </div>
+          <div class="card text-center bg-success text-light mb-3">
+            <div class="card-body">
+              <h3>Categories</h3>
+              <h1 class="display-4"><i class="fa fa-folder-open-o"></i> 4</h1>
+              <a href="categories.html" class="btn btn-sm btn-outline-light">View</a>
+            </div>
+          </div>
+          <div class="card text-center bg-warning text-light mb-3">
+            <div class="card-body">
+              <h3>Users</h3>
+              <h1 class="display-4"><i class="fa fa-users"></i> 12</h1>
+              <a href="users.html" class="btn btn-sm btn-outline-light">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="mainFooter" class="bg-dark text-light mt-5 p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="lead text-center">Copyright &copy; 2018 Blogen</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Add Post Modal -->
+  <div class="modal fade" id="addPostModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-light">
+          <h5 class="modal-title" id="addPostModalLabel">Add Post</h5>
+          <button class="close text-light" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="title" class="form-control-label">Title</label>
+              <input type="text" class="form-control" name="title">
+            </div>
+            <div class="form-group">
+              <label for="category" class="form-control-label">Category</label>
+              <select name="category" class="form-control">
+                <option value="web-development">Web Development</option>
+                <option value="tech-gadgets">Tech Gadgets</option>
+                <option value="business">Business</option>
+                <option value="health-wellness">Health &amp; Welness</option>
+              </select>
+            </div>
+            <div class="form-group bg-light p-3">
+              <label for="file" class="form-control-label">Image Upload</label>
+              <input type="file" class="form-control-file" name="file" id="file">
+              <small id="fileHelp" class="form-text text-muted">Max Size: 3M</small>
+            </div>
+            <div class="form-group">
+              <label for="body">Body</label>
+              <textarea name="editor1" class="form-control"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button class="btn btn-primary" data-dismiss="modal">Add Post</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Add Category Modal -->
+  <div class="modal fade" id="addCategoryModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-light">
+          <h5 class="modal-title" id="addCategoryModalLabel">Add Category</h5>
+          <button class="close text-light" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="title" class="form-control-label">Title</label>
+              <input type="text" class="form-control" name="title">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button class="btn btn-success" data-dismiss="modal">Add Category</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add User Modal -->
+  <div class="modal fade" id="addUserModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-warning text-light">
+          <h5 class="modal-title" id="addUserModalLabel">Add User</h5>
+          <button class="close text-light" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="title" class="form-control-label">Name</label>
+              <input type="text" class="form-control" name="name">
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-control-label">Email</label>
+              <input type="email" class="form-control" name="email">
+            </div>
+            <div class="form-group">
+              <label for="password" class="form-control-label">Password</label>
+              <input type="password" class="form-control" name="password1">
+            </div>
+            <div class="form-group">
+              <label for="password2" class="form-control-label">Confirm Password</label>
+              <input type="password" class="form-control" name="password2">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button class="btn btn-warning" data-dismiss="modal">Add User</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  </script>
+  <script src="../dist/jquery.js"></script>
+  <script src="../dist/popper.js"></script>
+  <script src="../dist/bootstrap.js"></script>
+  <script>
+    CKEDITOR.replace('editor1');
+  </script>
+</body>
+
+</html>
