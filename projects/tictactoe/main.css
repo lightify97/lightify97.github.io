@@ -115,7 +115,7 @@ body {
 
 @media (max-width: 720px) {
   html {
-    font-size: 53%;
+    font-size: 40%;
   }
   .board {
     width: 95vw;
